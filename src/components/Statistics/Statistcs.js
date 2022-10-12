@@ -16,10 +16,10 @@ const Statistcs = () => {
     // const data=topics;
     // console.log(topics);
     return (
-        <div>
-            <h3>Statistics page</h3>
-            <LineChart
-                width={500}
+        <div className='place-items-center'>
+            <h3 className='mb-12 mt-12'>Questions by Topic Category Statistics</h3>
+            <LineChart className='mx-auto'
+                width={370}
                 height={300}
                 data={data}
                 margin={{

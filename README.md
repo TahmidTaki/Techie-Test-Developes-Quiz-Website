@@ -4,7 +4,7 @@ A programming related Quiz Web Application made with ReactJS.
 
 ## Live site Link
 
-The live site can be accessed here: (https://6346d39ab970b61855d459e1--earnest-pixie-a60c12.netlify.app/).
+The live site can be accessed here: [Techie Test](https://6346d39ab970b61855d459e1--earnest-pixie-a60c12.netlify.app/).
 
 
 

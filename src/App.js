@@ -1,6 +1,7 @@
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import Blogs from './components/Blogs/Blogs';
 import ErrorPage from './components/error-page/ErrorPage';
 import Header from './components/Header/Header';
 import HomePage from './components/HomePage/HomePage';
@@ -32,6 +33,10 @@ function App() {
             return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`);
           }
         },
+        {
+          path: '/blogs',
+          element: <Blogs></Blogs>
+        }
 
       ],
       errorElement: <ErrorPage></ErrorPage>,

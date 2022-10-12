@@ -7,6 +7,7 @@ import Header from './components/Header/Header';
 import HomePage from './components/HomePage/HomePage';
 import QuizPage from './components/QuizPage/QuizPage';
 import RootPage from './components/root-page/RootPage';
+import Statistcs from './components/Statistics/Statistcs';
 
 
 function App() {
@@ -36,6 +37,11 @@ function App() {
         {
           path: '/blogs',
           element: <Blogs></Blogs>
+        },
+        {
+          path: '/statistics',
+          loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
+          element: <Statistcs></Statistcs>
         }
 
       ],

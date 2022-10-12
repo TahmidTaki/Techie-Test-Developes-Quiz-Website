@@ -1,20 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye } from '@fortawesome/free-solid-svg-icons'
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 
 
-const Questions = ({ questionDetail }) => {
+const Questions = ({ questionDetail, setWrongCount, setCorrectCount, wrongCount, correctCount }) => {
     const element = <FontAwesomeIcon icon={faEye} />
     const { question, correctAnswer, options } = questionDetail;
-    console.log(question);
+    // console.log(question);
+    // const [correctCount, setCorrectCount] = useState(0);
+    // const [wrongCount, setWrongCount] = useState(0);
     const showAns = () => {
         Swal.fire(
             'Confused? Correct answer is: ',
             ` ${correctAnswer}`,
             'question'
         )
+
     }
 
     const checkAns = (op) => {
@@ -24,6 +27,7 @@ const Questions = ({ questionDetail }) => {
                 title: 'WoW... You chose wisely.',
                 showConfirmButton: true,
             })
+            setCorrectCount(correctCount + 1)
         }
         else {
             Swal.fire({
@@ -31,6 +35,7 @@ const Questions = ({ questionDetail }) => {
                 title: 'Oops...not the right answer',
                 text: 'Try again!',
             })
+            setWrongCount(wrongCount + 1)
         }
     }
 

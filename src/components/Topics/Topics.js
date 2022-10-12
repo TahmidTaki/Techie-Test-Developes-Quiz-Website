@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Topics = ({ topic }) => {
     const { id, name, logo, total } = topic;
-    console.log(topic);
+    // console.log(topic);
     return (
         <div>
 

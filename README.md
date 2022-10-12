@@ -16,5 +16,6 @@ The live site can be accessed here: [Create React App](https://github.com/facebo
 - Upon clicking answers users will get immidiate feedback on right/wrong answer with Toast prompt.
 - If user clicks on the 'eye' icon beside the question, the correct answer will be revealed.
 - This is a Single Page Application (SPA). Navigating between pages is smoother than ever. 
+- Total right and wrong answer count can be viewed in real time at top-right corner of Test Page
 
 
